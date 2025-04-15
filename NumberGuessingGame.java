@@ -74,7 +74,7 @@ public class NumberGuessingGame {
                 guessField.setText(""); // Clear input field after each guess
                 
                 if (guess < 1 || guess > 100) {
-                    messageLabel.setText("Please enter a number between 1 and 100");
+                    messageLabel.setText("Please Enter A Number Between 1 and 100");
                 } else if (guess < randomNumber) {
                     messageLabel.setText("Too Low! Try again.");
                 } else if (guess > randomNumber) {
