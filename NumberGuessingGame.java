@@ -34,7 +34,7 @@ public class NumberGuessingGame {
         guessField = new JTextField(5);
         guessField.setHorizontalAlignment(JTextField.CENTER);
         guessField.setFont(new Font("Arial", Font.BOLD, 14));
-        guessField.addActionListener(new GuessHandler()); // Enter key support
+        guessField.addActionListener(new GuessHandler()); 
         panel.add(guessField);
         
         attemptsLabel = new JLabel("Attempts: 0", SwingConstants.CENTER);
@@ -71,7 +71,7 @@ public class NumberGuessingGame {
                 int guess = Integer.parseInt(guessField.getText());
                 attempts++;
                 attemptsLabel.setText("Attempts: " + attempts);
-                guessField.setText(""); // Clear input field after each guess
+                guessField.setText(""); 
                 
                 if (guess < 1 || guess > 100) {
                     messageLabel.setText("Please Enter A Number Between 1 and 100");
